@@ -1,0 +1,44 @@
+NOVEMBER 19, 2016
+
+MUTABILITY
+
+  Mutable:
+  - Stirngs
+  - Numbers
+  - Boolean
+
+  Immuatable:
+  - Objects
+  -Arrays
+
+
+PASS THROUGH FUNCTIONS
+
+  Immutable: passes value
+  Mutable: passes reference
+
+  *pass through mutable, it references the same piece of data
+  *pass through immutable, only references the value
+
+  DOM LECTURE
+
+    //adding actions to elements
+    1.  add event listener ** it is not javascript, it is a dom method
+    2. addEventListener("click", function(){}) ** will run function when clicked
+
+    //onclick
+    1.  variable.onclick = function (event)
+    2. on click is a proeprty, not really listening to an event, specific click
+
+
+DEBUGGIN PROCESS
+
+  1. SANITY CHECK ** ARE MY SOURCE FILES BEING INCLUDED
+  3. PATHS CORRECT SPELLING ** IS EVERYTHING SPELT CORRECTLY DUH
+  2. FILE PATH ** ARE MY FILE PATHS CORRECT
+
+GIT HELP (PUSH PULL MAINTAINER CONTRIBUTOR)
+  // adding in tracking from andreas master
+  1.  git remote add andrea_origin "github url https"
+  2.  git branch --track andrea_master andrea_origin/master
+

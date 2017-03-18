@@ -1,0 +1,65 @@
+DECEMBER 24, 2016
+
+**STREAMS**
+
+READ A PIECE OF DATA AS A DATA STREAM
+
+CONSUMING THE DATA STREAM
+  - taking little chunks of data from the data source and doing something with it
+  - take chunk and write that specific chunk to a file that is open
+
+  **OPEN A FILE**
+    - manipulate data streams as objects and use PIPE
+
+    1.  Abstract inferface
+    2.  Generic enough to be readable or writeable if it makes sense
+    3.  Apply it on to something else
+
+    FASTER WAY TO WORK WITH I/O BOUND DATA
+
+      **TYPES OF I/O BOUDN DATA**
+        1.  Network
+        2.  Disks
+        3.  DataBase
+
+    ALL STREAMS ARE INSTANCES OF EVENT EMITTER
+      - you can listen for events a.k.a. event listener
+      - buttons are example of somehting that 'emits events'
+      - the event listener addes a handler to 'handle' the event
+      - you can add event listeners to streams
+
+    **STREAM CLASSES**  https://nodejs.org/api/stream.html
+
+      1.  Readable
+      2.  Writable
+      3.  Duplex
+      4.  Transform
+
+    **PIPES
+
+      - Readable streams can be piped to writable streams
+
+**PORTS AND SOCKETS**
+
+  HOST
+    - host needs to be listening to a port
+  IP
+    - internet protocol
+
+  **when you run live-server, that service is listening on port *selected port*(usually 8080)
+
+  COMMON PORTS
+
+  ** 80 is the HTTP port for the interwebs **
+
+  ** 443 is the port HTTPS **
+
+  ** 22 SSH **
+
+  ** 53 DNS **
+
+  ALL OF THESE PORTS ARE UNDER 1024
+    - These are reserved ports
+    - Must have priveleges to bind on those ports
+  *SERVICES NEED TO BIND A A PORT AND HOST**
+

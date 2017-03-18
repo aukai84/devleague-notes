@@ -1,0 +1,7 @@
+FEBRUARY 18, 2017
+
+    **SEEDS**
+        - initial set of data to get your "app" to run
+        - standardized way to set your initial data (usually just admin user etc.)
+    **MIGRATIONS**
+        - structure of your initial data

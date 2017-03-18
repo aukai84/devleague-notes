@@ -1,0 +1,102 @@
+REACT NOTES MARCH 8, 2017
+
+** BEST PLACE TO LEARN REACT LINK - https://www.quora.com/Whats-the-best-place-to-learn-React-js**
+
+    - REACT is a library not a framework
+    - doesn't make assumptions of how to organize filers
+    - react is for building user interface
+    - not just for html. you can use it for any user interface
+    - describes UI in a declarative way!!!
+
+** REACT IS A LIBRARY!  IT NEEDS A LOT OF OTHER THINGS**
+
+**DESIGN CONCEPTS**
+
+    1.  **REUSABLE STATEFUL COMPOSABLE COMPONENTS**  **EVERYTHING IS A COMPONENT**
+        - you compose all of your components from data (usually from above.. tree like structure?)
+    2.  **REACTIVE UPDATES**
+    3.  **VIRTUAL REPRESENTATION OF VIEWS IN MEMORY**
+        - doesn't have to update things during state cahnges
+        - it only renders it once
+
+    4.  THE RIGHT WAY TO WRITE REACT. **UNI DIRECTIONAL FLOW** TREE LIKE OR WATERFALL STUCTURE
+
+    5.  BY DEFAULT YOU USE REVERSE FLOW
+
+    6. TO MANAGE UNI DIRECTIONAL FLOW WE USE "REDUX"
+
+    7.  in react, components have LIFE CYCLES HOOKS
+        - components get added and removed from the dom, removed from structure
+        - component will actually will run before render
+        - life cycles are optional
+
+    **WHEN OUTPUTTING TO BROWSER YOU NEED REACT DOM**
+
+    **START A REACT APP**  **DEMO DEMO DEMO**
+
+        - start off by rendering component and then telling the component where to render
+
+
+        1. Starting up a simple react app
+
+            ```const ReactDemo = React.createElement(
+                /first arg is element type, second arg is attributes, rest are all the children
+                'div', {className: 'timer'}, "Hello React", React.createElement('input, {type: 'text'}'),
+                React.createElement('p', null, new Date().toString()),
+            )
+
+            ReactDOM.render(
+                //component ot render
+                ReactDemo,
+                //where to inject this component
+                //user getElementById
+                reactContainer
+            )```
+
+        2.  Build a simple listing app in Angular
+            // if scope variables don't automatically update (angular isn't aware of what changes)... tell angular to update the scope model with $scope.$apply();
+            **GET ANGULAR DEBUGGING CHROME EXTENSION IF BUILDING ANGULAR APPS**
+
+        3.  Build simple listing app in React inline
+
+            ** IMPORT BABEL CORE 5.8.24** // <script type='text/babel'> ** if error minified.. use non minified version REMOVE .MIN**
+            **USING JSX WITH REACT**
+                - similar to HTML BUT NOT! XML like language
+                - write your jsx in Pascal Case
+
+            ```
+                const ReactDemo = React.createClass({
+                    render: () => {
+                        return (
+                            <div className="timer">
+                                Hello React
+                                <input type='text'>
+                                <p> Date Goes Here </p>
+                            </div>
+                        )
+                    };
+                }
+                );
+
+                ReactDOM.render(
+                    <App />
+                )
+            ```
+            **ES6 WAY TO WRITE REACT CLASSES**
+
+            ```
+                class App extends React.Component {
+                    constructor(){
+                        /inherit constructor from super class
+                        super();
+                    }
+                    render () {
+                        return (
+                            <div className="timer">
+                                Hello React
+                                <input type='text'>
+                                <p> Date Goes Here </p>
+                            </div>
+                        )
+                    }
+                }

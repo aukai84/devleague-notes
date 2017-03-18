@@ -1,0 +1,17 @@
+DECEMBER 7, 2016
+
+MULTIPLE INHERITANCE
+  - It is when you in herit form multiple objects prototypes.
+  - Javascript doesn't natively support multiple inheritance
+
+  ** Mix In
+    - is a design pattern where you iterate over multiple objects prperties
+
+    function extend(destination, source) {
+      for (var k in source.prototype) {
+        if (source.prototype.hasOwnProperty(k)) {
+          destination.prototype[k] = source.prototype[k];
+        }
+      }
+      eturn destination;
+    }

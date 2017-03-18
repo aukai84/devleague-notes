@@ -1,0 +1,56 @@
+DECEMBER 1, 2016
+
+OBJECT ORIENTED PROGRAMMING
+
+  CLASSES......OBJECTS....INSTANCES
+
+  *SCROLL PIC*
+    - The scroll is a class
+    - the house is an instance of a class
+
+    When you build it its called instantiating an Object
+    **can create many houses from blueprint**
+    **all start out with same features**
+
+    - classes all have properties and methods
+
+    UML - universal meta language or markup language
+    ERD - entity relationship diagram
+
+    CLASS === HOUSE
+      Properties:{
+        windows: number
+        doors: number
+        color: string
+        flooring: string
+      }
+      Methods: {
+        open doors
+        cook food
+        condition air
+        entetain
+      }
+
+    INHERITANCE
+
+    *SCROLL PIC*
+
+    CLASS === MOBILE HOME
+      **inherit prototype of mobile home**
+      - Mobile Home extends House (copy of house)
+      - Mobile Home has every property and method of house
+      - You can add properties and methods to mobile home without adding to house
+      - You can override the directions to a method
+
+  OOP, DEFINING CLASSES, INSTANTIATING OBJECTS
+
+  **CONSTRUCTOR**
+
+  function Person() {
+    //method that is invoked on instantiation
+  }
+  //you use PascalCased fo class declarations
+  //instantiating object of the perosn class
+
+  var nakaz = new Person(); //woohoo
+

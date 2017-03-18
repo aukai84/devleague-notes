@@ -1,0 +1,23 @@
+NOVEMBER 16, 2016 ***BIRTHDAY****
+
+DATA STRUCTURES
+  - OBJECT
+  - ARRAY
+    - LINKED LISTS, DOUBLY LINK LISTS, CIRCULAR LL
+    - STACK (FISRT IN LAST OUT)
+    -QUEUE (FISRT IN FIRST OUT
+
+  LINKED LISTS:
+    {  val: "cat"
+       next : {
+
+        val: "dog",
+        next: null
+       }
+    }
+    **EVERY NODE HAS A VALUE AND A NEXT
+
+    ALGORITHIM
+      1. preparing input data
+      2. define the steps
+      3. return a value

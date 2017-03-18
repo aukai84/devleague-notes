@@ -1,0 +1,38 @@
+NOVEMBER 12, 2016
+      Jon validate for errors:
+        VALIDATE IF INPUT IS VALUE IS THE CORRECT TYPE
+          function validations(x){
+        if (typeof x !== 'number'){
+          return new Error(`Invalid input type: ${x} is not a Number`);
+        }
+        return null;
+      }
+    ```
+    ```  function load(x){
+        let err = validations(x);
+        if( err ){
+          // handle more gracefully
+          //  maybe rollback something
+          //  maybe log this error, then throw
+          //  definitely, give user some feedback
+          throw err;
+        }
+        // continue normal operations
+        _total = x;
+        return _total;
+      }
+    ```
+    note: _should be named *validateNumber*_
+
+    [11:11]
+     ```  function validate(type, val){
+        if (typeof val === type){
+          return new Error(`Invalid input type: ${val} is not a ${type}`);
+        }
+        return null;
+      }
+
+      CLOSURES:
+        - closure are when varaibles are accessed outside of the immediate scope
+        - it is a function that accesses a variable outside its scope
+        -

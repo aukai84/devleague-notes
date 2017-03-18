@@ -1,0 +1,7 @@
+PIXEL PAINTER NOTES
+
+  Steps:
+
+    1.  Create Grid
+      - use for loops to create table rows (tr) and columns (td)
+      - create on click or click functionality to assign selected color to selected grid

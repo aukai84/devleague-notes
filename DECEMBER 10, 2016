@@ -1,0 +1,30 @@
+DECEMBER 10, 2016
+
+**WE ARE LEARNING NODE CALL BACKS AND A-SYNC**
+
+  NODE IS A PLATFORM WITH A STANDARD LIBRARY.  IT IS A RUNTIME THAT USES CHROMES V8 ENGINE
+
+    - A-SYNC
+      - What is the difference between a-sync and synchronus
+      - Synchronus is like a queue
+      - A-SYNC RUNS THINGS AT THE SAME TIME AND RETURNS THEM WHEN IT IS FINISHED
+
+    -NON-BLOCKING (I/O)
+      - Saving to disk takes time.... it is an I/O
+      - grabbing information from network is an I/O
+      - grabbing information from datatbase is an I/O
+
+      **A-SYNC ALLOWS US TO TO MULTIPLE OPERATIONS?? AT THE SAME TIME
+
+
+    -EVENT-DRIVEN
+    -ARCHITECTURE
+
+    INITIALIZE MOCHA AND CHAI
+
+    ```npm init```
+    ```npm --save-dev mocha chai```
+    change scripts to read:
+    ```"scripts": {
+          "test": "mocha --watch"
+    }
