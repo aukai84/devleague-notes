@@ -83,12 +83,26 @@ REACT NOTES MARCH 8, 2017
                 )
             ```
             **ES6 WAY TO WRITE REACT CLASSES**
+            **DO NOT USE INSTANCE PROPERTIES WHEN DATA IS CHANGING**
 
             ```
                 class App extends React.Component {
-                    constructor(){
-                        /inherit constructor from super class
-                        super();
+                    constructor(props){
+                        //inherit constructor from super class
+                        //GIVE PROPS TO YOUR PARENTS
+                        super(props);
+                        //set the initial state of THIS COMPONENT
+                        //SET STATE IN THE CONSTRUCTOR
+                        //instantiating state
+                        this.state = {
+                            currentTime: "no time yet",
+                            name: "Aukai"
+                        }
+                        //udpating state
+                        this.setState({
+                            currentTime: "new time",
+                            name: "sbz"
+                        })
                     }
                     render () {
                         return (
@@ -100,3 +114,9 @@ REACT NOTES MARCH 8, 2017
                         )
                     }
                 }
+                **PROPS ARE LIKE ...**
+                READ UP ON STATES AND PROPS
+
+                //dumb component
+
+                const
