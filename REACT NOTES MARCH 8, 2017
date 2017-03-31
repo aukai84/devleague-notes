@@ -116,7 +116,29 @@ REACT NOTES MARCH 8, 2017
                 }
                 **PROPS ARE LIKE ...**
                 READ UP ON STATES AND PROPS
-
+                **there are dumb components and containers**
+                **DUMB COMPONENTS**
+                    - only return one thing
+                **CONTANIERS**
+                    - have state, more complicated, do more stuff
                 //dumb component
 
-                const
+                ** TO BE GOOD AT REACT...JUST BE GOOD AT JAVASCRIPT **
+
+                **LIFE CYCLE HOOKS**
+                //before rendering
+                componentWillMount(){
+                    //use with XHR request
+                }
+                // done rendering
+                componentDidMount(){
+                    //after rending
+                }
+                //rendering update
+                render(){
+                    //renders stuff update
+                }
+            - on submit handlers add event.preventDefault()...which prevent automagicallly doing a GET to its own route
+
+
+**START A REACT APP**
