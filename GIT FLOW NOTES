@@ -1,0 +1,8 @@
+GIT FLOW NOTES
+
+1.  First clone repo through SSH
+2.  Add every team member as collaborator with "write" permissions
+3.  One team member will be the owner of the repo
+4.  It will start at master then go to develop branch?
+    - develop is where you will be producing the code with new features
+5.  Owner creates origin/develop branch.  team members pull down project.  git checkout develop branch (git fetch if needed)

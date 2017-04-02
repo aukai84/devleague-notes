@@ -1,1 +1,14 @@
-MARCH 30, 2017 TRIE DATA STRUCTURE
+MARCH 30, 2017 TRIE DATA STRUCTURE (RETRIEVAL)
+
+
+                    {root}  **does rooot have node of c
+                       |
+                      {c}   ** does c have child node a
+                       |
+                       {a}  **does node have child r
+                      /  \
+                     {t}    {r(leaf)}  **is r a leaf?  yes.. then we have car
+                      |
+                     {c}
+                      |
+                     {h}
