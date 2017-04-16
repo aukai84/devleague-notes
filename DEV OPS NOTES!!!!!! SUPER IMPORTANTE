@@ -1,0 +1,93 @@
+DEV OPS NOTES!!!!!! SUPER IMPORTANTE
+
+1.  NEVER SAVE IMPORTANT DATA
+2.  NEVER RUN AS ROOT
+3.  BE PESSIMISTIC ABOUT SECURITY
+
+TO START
+
+*command* ssh admin@softcoreos.deavleague.com -p PORT**
+
+**NGINX**
+
+*command* `sudo apt-get install nginx`  // we do this to install nginx to our box
+
+It allows us to route things like express... but to your cloud server
+FASTER THAN OTHERS AND EASIER TO CONFIGURE
+FREE
+SPEED AND SECURITY
+IT CAN HANDLE MORE REQUESTS THAN YOUR NODE APP
+    - nginx is on top of your "box" it routes your request like express to either static files or server in your box
+    - it can handle your ssl certs
+**CLI COMMANDS WHEN IN SOFTCOREOS**
+
+//cd into nginx
+**cd /etc/nginx**
+**cd sites-enabled**
+**cat default**
+**cd sites-enabled**
+**sudo cp default default.bak**
+**cd sites-available**
+**vi default** //edit default file to your server in sites available
+** sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default** //linking file we want to reference and location we want to put it
+//go to home director *cd*
+ls /var??
+**sudo mkdir var/www**
+
+**sudo service --status-all**
+//check your config
+**sudo service nginx configtest**
+//always test your config to test your file!!!!**
+//always test before you restart or reload
+
+changing service:
+    restart: gracefully stop and start gracefully
+    reload: doesn't restart service, just reloads your service.. makes sure no request dies..it re-reads your configuration and loads it
+
+LEARN STATUS CODES!!!
+
+300 AND ON....
+**www.restapitutorial.com/httpstatuscodes.html**
+
+Redirect 3XX
+
+301 - remove permantentely
+302 - temporary redirect
+
+Redirect 4XX (Client)
+
+400
+401
+403
+404
+
+Redirect 5XX (Server)
+
+500
+501 - maybe..
+502 - bad gateway.. nothing is getting routed properlty
+
+
+
+**IIS**
+
+Microsoft based web server
+
+**APACHE**
+
+Another web based server
+
+
+server {
+
+  listen 80;
+
+  server_name aukai.softcoreos.devleague.com www.aukai.softcoreos.devleague.com;
+
+  root /var/www/aukai.com;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+
+}

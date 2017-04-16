@@ -1,0 +1,102 @@
+FINAL PROJECT NOTES
+
+- traffic cam at location
+- warning for high
+
+OVER TIME
+- specific place is doing better? worse? same?
+- compare two places.  current and future location comparison
+
+
+**PROJECT OVERVIEW**
+1.  Specific location View
+    - specific location data
+    - for traffic incidents and crime incidents
+    - only using Hawaii data for specific locations
+    - show historical incidents in surrounding area
+    - able to search for future locations and see incidents in areas
+    EX. search for Mooses and see surrounding area
+2.  State View
+    - state view shows aggregate historic data for incidents
+    - split up by city
+    - slider and incident type checkmark to visualize data
+    - DATA SET FOR THIS VIEW IS SEPARATE FROM SPECIFIC
+    - MAYBE SHOW HOT SPOT VIEW IN THIS STATE VIEW
+3.  Country View
+    - view has aggregate data for each state involving incidents
+    - able to click on specific state to take you to state view
+    - needs some sort of data visualization
+    - DATA SET FOR THIS VIEW IS SEPARATE FROM SPECIFIC
+4.  COMPARISON VIEWS
+    - One view showing current location and "future" locations comparing incident differences
+    - One view showing a specific
+
+DAY 1
+
+**VIEWS**
+
+HOME
+
+NATIONWIDE
+
+- d3 US Map **one view**
+- magic side bar
+    1. list of crime toggles
+    2. compare by state, compare by county button forms
+        - comparison tab shows types of crime aggregate
+        - comparison tab has specific crimes over time compared to each other
+    3. timeline bar static on bottom of map
+    4. graphs popout tab
+        - many graphs w/ timeline**hard**
+    5.
+
+STREET
+
+
+**DEVOPS**
+
+1.Registrar
+    - set the nameserver ex. *ed.com ->  nameservers -> ns1.digitalocean.com || ns2.digitalocean.com (means that you have dns records at said place) for this domain **ed.com** ALL CAPITAL
+2.DNS HOST/RECORDS
+    - registrar points to dns host
+    - ed.com -> 1.2.3.4.... will see ed.com then resolve to 1.2.3.4...
+    - jon.ed.com -> jons box has 1.2.3.5? he has a different box pointing to a different ip address
+    - no name -> resolves to a 404 or error ** anything that doesn't match resolves to (reroute?)
+
+3.IP ADDRESS HAVE TTL **TIME TO LIVE**
+    - have a time to live
+    - you can set the time
+    - if you make a change it takes time to change across the entire scale
+    - if you change the nameservers you may experience down time
+    - make sure destination that is pointed to is already set up
+
+**RULES ABOUT DEV OPS**
+
+1. NEVER STORE SECURITY.. INFORMATION.. BLA BLA NEVER STORE SECURE INFO
+2. LINUX ON BOXES.  NEVER RUN AS ROOT EVER **ROOT IS ACCESS TO ANYTHING.. ALWAYS HAVE ACCESS**
+    - having a daemon running as root.
+    - safe way is to not be root... be un-priveleged user.  use this user account as admin.  ability to run sudo but not a root user
+3.  LIMIT ACCESS, DENY ALL BY DEFAULT
+4.  ALWAYS BE PESSIMISTIC ABOUT SECURITY.  GO ON THE IDEA THAT YOU ARE GOING TO GET HACKED
+    - root u.....r.......a.......m.......
+
+    ssh -p ____  root@        .softcoreos.devleague.com
+          |PORT| |username|   |host domain or ipaddress|
+
+    - create admin user -> useradd -h help
+                                   -m -g users -G sudo -s /bin/bash admin
+                                   -G
+
+    **SETTING UP ENVORINMENT**
+        - when in admin...
+            1.  mkdir .ssh
+            2.  cd .ssh
+            3.  touch authorized_keys
+            4.  /home/admin/.ssh/authorized_keys -> owner can read and list contents
+    **FILE PERMISSIONS**
+        - **ls -lah**
+        CHANGING OWNERSHIP OF FILE OR DIRECTORY
+            **chown -admin:root .ssh**
+            **chmod ___ filename** ex. .ssh
+            chmod changes the mode of the file
+            ** read write execute** | | |

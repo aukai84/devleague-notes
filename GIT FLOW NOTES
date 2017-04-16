@@ -5,4 +5,36 @@ GIT FLOW NOTES
 3.  One team member will be the owner of the repo
 4.  It will start at master then go to develop branch?
     - develop is where you will be producing the code with new features
-5.  Owner creates origin/develop branch.  team members pull down project.  git checkout develop branch (git fetch if needed)
+5.  Owner creates origin/develop branch.  team members pull down project.  git checkout develop branch (git fetch if neededg)
+6.  `git flow init` to initialize your git flow repo
+7.  ONLY START WORKING WHEN THERE IS AN ISSUE FOR YOU TO FIX
+8.  start your feature branch by `git flow feature start *branch name*`
+    **COMMIT MESSAGES FORMAT**
+    HEADER
+
+    -description
+    -body
+
+    FOOTER**LINK TO AN ISSUE** EX. resolves/closes #1 or references #1
+9.  after commit don't push.. use `git flow feature finish` MOST OF THE TIME NOT USING GIT FLOW FINISH **UNLESS YOU ARE ALONE**
+10.  after commit use `git flow feature publish`
+11.  to do a pull request from CLI use `hub pull-request`
+
+**VIEWS**
+
+HOME
+
+NATIONWIDE
+
+- d3 US Map **one view**
+- magic side bar
+    1. list of crime toggles
+    2. compare by state, compare by county button forms
+        - comparison tab shows types of crime aggregate
+        - comparison tab has specific crimes over time compared to each other
+    3. timeline bar static on bottom of map
+    4. graphs popout tab
+        - many graphs w/ timeline**hard**
+    5.
+
+STREET
